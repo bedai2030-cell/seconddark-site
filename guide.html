@@ -103,7 +103,7 @@ ffmpeg -i final.mp4 -filter_complex \
  "[0:v]split=2[a][b];\
   [a]scale=-2:1920,crop=1080:1920,gblur=sigma=45,eq=brightness=-0.30:saturation=0.92[bg];\
   [b]scale=1080:-2[st];[bg][st]overlay=0:656[v];\
-  [v]drawtext=text='Part 43':fontsize=96:fontcolor=white:x=(w-text_w)/2:y=1672[v]" \
+  [v]drawtext=text='Part 17':fontsize=96:fontcolor=white:x=(w-text_w)/2:y=1672[v]" \
  -map "[v]" -map 0:a -c:v libx264 -crf 19 -c:a aac out.mp4
   </pre>
   <p class="rv"><b>Posting is automatic.</b> A caption queue (part number → file → caption → YouTube title/description) plus a scheduled GitHub Action posts one part a day at 6 PM ET, retries at 7:20, and guards against double-posting with a last-posted timestamp. The PC can be off.</p>
