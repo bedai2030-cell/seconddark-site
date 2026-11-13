@@ -40,9 +40,9 @@ nav .soc a:hover svg { fill: var(--hot); transform: translateY(-2px); }
 .sky { position: absolute; inset: 0; background: linear-gradient(to bottom, var(--bg) 0%, var(--sky1) 34%, var(--sky2) 55%, var(--sky3) 74%, var(--sky4) 100%); }
 .sky::after { content: ""; position: absolute; inset: 0; background: radial-gradient(ellipse 120% 60% at 50% 78%, rgba(255,160,80,0.28), transparent 60%); }
 .stars { position: absolute; inset: 0; }
-.sun { position: absolute; left: 50%; bottom: 20%; width: 300px; height: 300px; margin-left: -150px; border-radius: 50%; background: radial-gradient(circle, #FFE9B8 0%, #FFC46B 45%, rgba(255,150,70,0) 72%); animation: sunPulse 7s ease-in-out infinite; }
+.sun { position: absolute; left: 71%; bottom: 16%; width: 320px; height: 320px; margin-left: -160px; border-radius: 50%; background: radial-gradient(circle, #FFE9B8 0%, #FFC46B 45%, rgba(255,150,70,0) 72%); animation: sunPulse 7s ease-in-out infinite; opacity: .92; }
 @keyframes sunPulse { 0%,100% { transform: scale(1); opacity: .95; } 50% { transform: scale(1.06); opacity: 1; } }
-.rays { position: absolute; left: 50%; bottom: 20%; width: 1400px; height: 1400px; margin-left: -700px; background: repeating-conic-gradient(from -90deg at 50% 100%, rgba(255,180,110,0.07) 0deg 7deg, transparent 7deg 14deg); -webkit-mask-image: radial-gradient(circle at 50% 100%, #000 0%, transparent 62%); mask-image: radial-gradient(circle at 50% 100%, #000 0%, transparent 62%); animation: raysSpin 90s linear infinite; opacity: .8; }
+.rays { position: absolute; left: 71%; bottom: 16%; width: 1400px; height: 1400px; margin-left: -700px; background: repeating-conic-gradient(from -90deg at 50% 100%, rgba(255,180,110,0.07) 0deg 7deg, transparent 7deg 14deg); -webkit-mask-image: radial-gradient(circle at 50% 100%, #000 0%, transparent 62%); mask-image: radial-gradient(circle at 50% 100%, #000 0%, transparent 62%); animation: raysSpin 90s linear infinite; opacity: .8; }
 @keyframes raysSpin { to { transform: rotate(4deg); } }
 .skyline { position: absolute; left: 0; right: 0; bottom: 0; width: 100%; height: 34%; }
 .hero-inner { position: relative; z-index: 5; display: grid; grid-template-columns: 1.2fr .8fr; gap: 30px; align-items: center; padding: 60px 0 120px; width: 100%; }
